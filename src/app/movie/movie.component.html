@@ -1,7 +1,16 @@
 <div>
+  <header class="barraSuperior">
+    <img src="AtividadeFilmes/src/style/iconmonstr-video-9.svg" alt="Icone cinema">
+    <h1>CinemaIFSP</h1>
+  </header>
+  <div class="separador"></div>
   @for (movie of movies; track movie.id){
-    <img [src] = "'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="" srcset="">
-    <h3>{{this.movie.title}}</h3>
-    <h3>{{this.movie.vote_average}}</h3>
+    <section class="container">
+      <div class="cartaz">
+        <img [src] = "'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="" srcset="" class="imagem">
+        <h3>{{this.movie.title}} | IMDB: {{this.movie.vote_average}}</h3>
+      </div>
+    </section>
+    <br>
   }
 </div>

@@ -1,0 +1,46 @@
+.barraSuperior {
+  background-color: #7b7df8;
+  padding: 20px;
+  margin-bottom: 1%;
+  text-align: center;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.barraSuperior h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.separador{
+  margin-bottom: 5%;
+}
+
+.container {
+  text-align: center;
+}
+
+.cartaz {
+  display: inline-block;
+}
+.imagem {
+  transition: transform 0.2s ease;
+  border: 10px solid;
+  border-image: linear-gradient(to left, #9395fc, #3a3a63);
+  border-image-slice: 1;
+}
+
+.imagem:hover {
+  transform: scale(1.05);
+}
+
+h3, h1{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
