@@ -13,10 +13,10 @@ export class MovieComponent implements OnInit{
   movies:any=[];
 
   ngOnInit(): void {
-
+    this.loadMovies();
   }
+  
   loadMovies(){
-    console.log("aaaaaaaa")
     this.movieService.getMovies().subscribe({
       next: (res:any)=>{
         this.movies = res.results;
